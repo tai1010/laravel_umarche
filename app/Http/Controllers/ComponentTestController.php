@@ -13,6 +13,8 @@ class ComponentTestController extends Controller
     }
 
     public function showComponet2(){
-        return view('tests.component-test2');
+        $message='メッセージ';
+        return view('tests.component-test2',
+        compact('message'));
     }
 }
